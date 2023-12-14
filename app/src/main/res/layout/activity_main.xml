@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/white"
     tools:context=".MainActivity">
 
     <View
         android:id="@+id/dash"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/dashboard"
+        android:background="@drawable/dashy"
         />
 
 
@@ -25,6 +26,7 @@
         android:layout_below="@+id/dash">
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_tous"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_row="0"
@@ -51,6 +53,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_ipv4"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_row="1"
@@ -77,6 +80,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_tcp"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_row="0"
@@ -103,6 +107,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/card_arp"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_row="1"
