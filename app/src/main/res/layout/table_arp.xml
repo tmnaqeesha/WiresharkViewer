@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lvTemplate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txtArpId"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="id"
+        android:textSize="20sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtArpMsrc"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="psrc"
+        android:textSize="20sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtArpMdest"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:textSize="20sp"
+        android:text="pdest"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtArpIpsrc"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="nseq"
+        android:textSize="20sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtArpIpdest"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="nack"
+        android:textSize="20sp"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtArpHard"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:textSize="20sp"
+        android:text="checksum"
+        android:textColor="#000" />
+
+    <TextView
+        android:id="@+id/txtArpProtocol"
+        android:layout_width="100dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:text="urp"
+        android:textColor="#000" />
+
+</LinearLayout>
