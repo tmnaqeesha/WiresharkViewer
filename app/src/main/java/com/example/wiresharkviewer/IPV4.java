@@ -10,14 +10,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Tous extends AppCompatActivity {
+public class IPV4 extends AppCompatActivity {
 
     ListView lstStockItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_tous);
+        setContentView(R.layout.layout_ipv4);
         lstStockItems = findViewById(R.id.lstStockItems);
 
         FillList();
@@ -46,12 +46,12 @@ public class Tous extends AppCompatActivity {
                 prolist.add(datanum);
             }
 
-            final SimpleAdapter simpleAdapter = new SimpleAdapter(Tous.this,
-                    prolist, R.layout.table, from,
+            final SimpleAdapter simpleAdapter = new SimpleAdapter(IPV4.this,
+                    prolist, R.layout.table_ipv4, from,
                     views);
             lstStockItems.setAdapter(simpleAdapter);
         } catch (Exception ex) {
-            Toast.makeText(Tous.this, ex.getMessage().toString(),
+            Toast.makeText(IPV4.this, ex.getMessage().toString(),
                     Toast.LENGTH_LONG).show();
         }
     }

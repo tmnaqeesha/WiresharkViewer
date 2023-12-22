@@ -30,7 +30,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="1dp"
-                    android:text="Item Ref"
+                    android:text="id"
                     android:textColor="#000"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -39,7 +39,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="1dp"
-                    android:text="Item name"
+                    android:text="psrc"
                     android:textColor="#000"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -49,7 +49,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="1dp"
-                    android:text="Supplier"
+                    android:text="pdest"
                     android:textColor="#000"
                     android:textSize="20sp"
                     android:textStyle="bold" />

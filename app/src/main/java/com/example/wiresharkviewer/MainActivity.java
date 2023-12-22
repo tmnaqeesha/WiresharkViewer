@@ -31,14 +31,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         Intent intent;
-        if (v.getId() == R.id.card_tous) {
-            intent = new Intent(this, Tous.class);
+        if (v.getId() == R.id.card_ipv4) {
+            intent = new Intent(this, IPV4.class);
             startActivity(intent);
-        } else if (v.getId() == R.id.card_tcp) {
-            // Handle card_tcp click
-        } else if (v.getId() == R.id.card_ipv4) {
+        }
+        else if (v.getId() == R.id.card_tcp) {
+            intent = new Intent(this, TCP.class);
+            startActivity(intent);
+        }
+        else if (v.getId() == R.id.card_tous) {
             // Handle card_ipv4 click
-        } else if (v.getId() == R.id.card_arp) {
+        }
+        else if (v.getId() == R.id.card_arp) {
             // Handle card_arp click
         }
     }

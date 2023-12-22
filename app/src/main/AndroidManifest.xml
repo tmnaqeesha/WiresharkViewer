@@ -15,7 +15,10 @@
         android:theme="@style/SplashScreen"
         tools:targetApi="31">
         <activity
-            android:name=".Tous"
+            android:name=".IPV4"
+            android:exported="false" />
+        <activity
+            android:name=".TCP"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"
