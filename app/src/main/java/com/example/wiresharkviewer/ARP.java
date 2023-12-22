@@ -39,20 +39,20 @@ public class ARP extends AppCompatActivity {
                 Map<String, String> datanum = new HashMap<String, String>();
                 datanum.put("arp_id", lsr.get(i).id_arp);
                 datanum.put("arp_msrc", String.valueOf(lsr.get(i).msrc_arp));
-                datanum.put("tcp_pdest", String.valueOf(lsr.get(i).tcp_pdest));
-                datanum.put("tcp_nseq", String.valueOf(lsr.get(i).tcp_nseq));
-                datanum.put("tcp_nack", String.valueOf(lsr.get(i).tcp_nack));
-                datanum.put("tcp_checksum", String.valueOf(lsr.get(i).tcp_checksum));
-                datanum.put("tcp_urp", String.valueOf(lsr.get(i).tcp_urp));
+                datanum.put("arp_mdest", String.valueOf(lsr.get(i).mdest_arp));
+                datanum.put("arp_ipsrc", String.valueOf(lsr.get(i).ipsrc_arp));
+                datanum.put("arp_ipdest", String.valueOf(lsr.get(i).ipdest_arp));
+                datanum.put("arp_hard", String.valueOf(lsr.get(i).hard_arp));
+                datanum.put("arp_protocol", String.valueOf(lsr.get(i).protocol_arp));
                 prolist.add(datanum);
             }
 
-            final SimpleAdapter simpleAdapter = new SimpleAdapter(TCP.this,
-                    prolist, R.layout.table_tcp, from,
+            final SimpleAdapter simpleAdapter = new SimpleAdapter(ARP.this,
+                    prolist, R.layout.table_arp, from,
                     views);
-            lstTcpItems.setAdapter(simpleAdapter);
-        } catch (Exception exx) {
-            Toast.makeText(TCP.this, exx.getMessage().toString(),
+            lstArpItems.setAdapter(simpleAdapter);
+        } catch (Exception ex) {
+            Toast.makeText(ARP.this, ex.getMessage().toString(),
                     Toast.LENGTH_LONG).show();
         }
     }
