@@ -21,6 +21,9 @@
             android:name=".TCP"
             android:exported="false" />
         <activity
+            android:name=".ARP"
+            android:exported="false" />
+        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>

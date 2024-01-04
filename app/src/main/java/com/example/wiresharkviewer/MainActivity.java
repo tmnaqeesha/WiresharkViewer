@@ -43,7 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             // Handle card_ipv4 click
         }
         else if (v.getId() == R.id.card_arp) {
-            // Handle card_arp click
+            intent = new Intent(this, ARP.class);
+            startActivity(intent);
         }
     }
 }
